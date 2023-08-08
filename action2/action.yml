@@ -1,0 +1,15 @@
+name: 'script executor'
+description: 'esta accion ejecutará un script'
+inputs:
+  execute:  # id of input
+    description: 'yes/no'
+    required: true
+    default: 'no data'
+outputs:
+  time: # id of output
+    description: 'hello from bash'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.execute }}
