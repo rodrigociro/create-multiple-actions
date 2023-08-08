@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 echo "script from docker"
 
 if [ $1="yes" ]
